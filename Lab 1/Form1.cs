@@ -46,7 +46,7 @@ namespace Lab_1
             e.Graphics.DrawLine(new Pen(Color.Black, 3), 340, 170, 420, 170);
 
             //Рисуем дверь
-            e.Graphics.DrawRectangle(new Pen(Color.Black, 4), 430, 290, 80, 138);
+            e.Graphics.DrawRectangle(new Pen(Color.Black, 4), 430, 290, 80, 137);
             e.Graphics.FillEllipse(new SolidBrush(Color.Black), 435, 360, 12, 12);
 
             //Рисуем Дым
@@ -77,20 +77,6 @@ namespace Lab_1
             e.Graphics.DrawRectangle(new Pen(Color.BurlyWood, 4), 720, 300, 20, 130);
             e.Graphics.DrawRectangle(new Pen(Color.BurlyWood, 4), 750, 300, 20, 130);
             e.Graphics.DrawRectangle(new Pen(Color.BurlyWood, 4), 780, 300, 20, 130);
-
-            //Рисуем солнышко
-            e.Graphics.FillEllipse(new SolidBrush(Color.Yellow), -40, -40, 140, 140);
-            e.Graphics.DrawLine(new Pen(Color.Yellow, 3), 0, 0, 120, 120);
-            e.Graphics.DrawLine(new Pen(Color.Yellow, 3), 0, 0, 145, 65);
-            e.Graphics.DrawLine(new Pen(Color.Yellow, 3), 0, 0, 130, 80);
-            e.Graphics.DrawLine(new Pen(Color.Yellow, 3), 0, 0, 126, 100);
-            e.Graphics.DrawLine(new Pen(Color.Yellow, 3), 0, 0, 136, 30);
-            e.Graphics.DrawLine(new Pen(Color.Yellow, 3), 0, 0, 142, 43);
-        }
-
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
-        {
-            label1.Text = e.X.ToString() + " " + e.Y.ToString();
         }
     }
 }
